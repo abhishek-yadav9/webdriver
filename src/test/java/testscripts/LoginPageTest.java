@@ -11,7 +11,8 @@ public class LoginPageTest {
 		
 		driver.manage().window().maximize();
 		driver.get("https://the-internet.herokuapp.com/login");
-		driver.findElement(By.id("username")).sendKeys("tomsmith");
+		//driver.findElement(By.id("username")).sendKeys("tomsmith");
+		driver.findElement(By.cssSelector("input[name='username'")).sendKeys("tomsmith");
 		driver.findElement(By.name("password")).sendKeys("SuperSecretPassword!");
 		
 		//driver.findElement(By.className("radius")).click();
@@ -20,7 +21,8 @@ public class LoginPageTest {
 		driver.findElement(By.partialLinkText("Elemental")).click();
 		driver.findElement(By.xpath("//a[@target='_blank']")).click();
 		
-	
+	//CSS Selector
+		//driver.findElement(By.cssSelector("input[name='username'")).sendKeys("tomsmith");
 
 	}
 

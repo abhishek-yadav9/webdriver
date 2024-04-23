@@ -19,6 +19,7 @@ public class WebTableTest {
 		for(WebElement cell: items) {
 			System.out.println(cell.getText());
 		}
+		nav div.header__menu__items > div:nth-child(2)
 		
 
 	}

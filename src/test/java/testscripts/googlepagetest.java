@@ -16,8 +16,8 @@ public class googlepagetest {
 		//driver.get("https://www.google.com/");
 		driver.navigate().to("https://www.google.com/");
 		System.out.println("Page Title: " + driver.getTitle());
-		WebElement srchBox = driver.findElement(By.id("APjFqb"));
-		WebElement srchBox = driver.findElement(By.className("APjFqb"));
+		//WebElement srchBox = driver.findElement(By.id("APjFqb"));
+		//WebElement srchBox = driver.findElement(By.className("APjFqb"));
 		WebElement srchBox = driver.findElement(By.name("APjFqb"));
 		srchBox.sendKeys("Java Tutorial");
 		srchBox.sendKeys(Keys.ENTER);
