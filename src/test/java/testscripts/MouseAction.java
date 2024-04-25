@@ -10,12 +10,13 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 
 public class MouseAction {
 
 	public static void main(String[] args) throws InterruptedException, IOException {
-		ChromeOptions options = new Chrome
+		ChromeOptions options = new ChromeOptions();
 		
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();

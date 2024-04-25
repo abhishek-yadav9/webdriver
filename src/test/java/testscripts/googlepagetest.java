@@ -1,5 +1,7 @@
 package testscripts;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -22,6 +24,10 @@ public class googlepagetest {
 		srchBox.sendKeys("Java Tutorial");
 		srchBox.sendKeys(Keys.ENTER);
 		
+		List<WebElement> listItems = driver.findElements(
+				By.xpath("//ul[role='listbox']//li//descendant::div[@class='pcTkSc']"));
+		System.out.println("total items : "+listItems.size());		
+		/*
 		System.out.println("Page Title:..."+driver.getTitle());
 		System.out.println("New URL: "+ driver.getCurrentUrl());
 
@@ -29,7 +35,7 @@ public class googlepagetest {
 		
 		System.out.println("Page Title after back():..." +driver.getTitle());
 		
-		driver.navigate().forward();
+		driver.navigate().forward();*/
 	}
 
 }
